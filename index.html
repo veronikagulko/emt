@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EMT Study Hub</title>
+
+  <style>
+    :root {
+      --accent: #c62828;
+      --border: #e0e0e0;
+      --text: #1a1a1a;
+      --muted: #666;
+      --bg: #ffffff;
+      --card: #f7f7f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 24px auto 0;
+      padding: 0 18px;
+    }
+
+    h1 {
+      margin-bottom: 6px;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    /* Drive button */
+    .drive-wrapper {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 18px;
+    }
+
+    .drive-button {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 12px;
+      text-decoration: none;
+    }
+
+    .drive-button:hover {
+      background: #a61f1f;
+    }
+
+    /* Search */
+    .search {
+      max-width: 1100px;
+      margin: 16px auto;
+      padding: 0 18px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      font-size: 15px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    /* Layout */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px;
+      background: white;
+      margin-bottom: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 16px;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 18px 30px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>EMT Study Hub</h1>
+    <p>Quick access to test prep, videos, and class resources.</p>
+  </header>
+
+  <!-- Drive Button -->
+  <div class="drive-wrapper">
+    <a
+      class="drive-button"
+      href="https://docs.google.com/document/d/1S9OCAXQFRljdT8xF6F6xrquIkux1zXOaBb2mfkc3hBs/edit?usp=sharing"
+      target="_blank"
+      rel="noreferrer"
+    >
+      📂 Drive of All Lecture Slides
+    </a>
+  </div>
+
+  <!-- Search -->
+  <div class="search">
+    <input id="q" placeholder="Search (quiz, exam, BP, airway, circulatory…)" />
+  </div>
+
+  <main id="grid">
+
+    <!-- LEFT COLUMN -->
+    <div>
+      <section>
+        <h2>Test Prep</h2>
+        <ul>
+          <li>Quiz 1 Study Guide</li>
+          <li>Quiz 2 Study Guide</li>
+          <li>Quiz 3 Study Guide</li>
+          <li>Quiz 4 Study Guide</li>
+          <li>Exam 1 Study Guide</li>
+          <li>Exam 2 Study Guide</li>
+          <li>Exam 3 Study Guide</li>
+          <li>Exam 4 Study Guide</li>
+          <li><strong>Final Exam Study Guide</strong></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Class Sheets</h2>
+        <ul>
+          <li>
+            <a href="https://docs.google.com/document/d/17OMSasSQ23wqQ24_Fvo8bJeuEBjVIgtCGBCUa-mW9G8/edit?usp=sharing" target="_blank">
+              Vital Signs Sheet
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/document/d/1AsS3b2rKSLHSx72XvOcwnARSBd-lsE_7rzp9kOtOFsQ/edit?usp=sharing" target="_blank">
+              Airway Adjuncts Sheet
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+      <section>
+        <h2>YouTube Videos</h2>
+
+        <details>
+          <summary>Medical Terminology</summary>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=04Wh2E9oNug&t=59s" target="_blank">Lesson 1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=ALWrvliACbQ&t=109s" target="_blank">Lesson 2</a></li>
+            <li><a href="https://www.youtube.com/watch?v=yPzEr33gHXk&t=128s" target="_blank">Lesson 3</a></li>
+            <li><a href="https://www.youtube.com/watch?v=TGPPBiOkN8Y&t=66s" target="_blank">Lesson 4</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Nang-V1lhqw&t=24s" target="_blank">Lesson 5</a></li>
+            <li><a href="https://www.youtube.com/watch?v=qESl2DqrULQ" target="_blank">Lesson 6 – Practice</a></li>
+            <li><a href="https://www.youtube.com/watch?v=UYfkzOOSU40" target="_blank">Lesson 7 – MSK & Repro</a></li>
+            <li><a href="https://www.youtube.com/watch?v=QiivC3iLZew&t=24s" target="_blank">Lesson 8 – Nervous</a></li>
+            <li><a href="https://www.youtube.com/watch?v=5D4FaWp0rq4&t=30s" target="_blank">Lesson 9 – Eyes</a></li>
+            <li><a href="https://www.youtube.com/watch?v=AXeNBXGE9bo" target="_blank">Lesson 10 – Skin</a></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Circulatory System</summary>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=-s5iCoCaofc&t=62s" target="_blank">Video 1</a></li>
+            <li><a href="https://youtu.be/BJtOg70Sxxc" target="_blank">Video 2</a></li>
+            <li><a href="https://youtu.be/KSbbDnbSEyM" target="_blank">Video 3 – Rap 🎵</a></li>
+            <li><a href="https://youtu.be/_lgd03h3te8" target="_blank">Video 4</a></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Respiratory System</summary>
+          <ul>
+            <li><a href="https://youtu.be/nCxN-k9bK5w" target="_blank">Video 1</a></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Urinary System</summary>
+          <ul>
+            <li><a href="https://youtu.be/CkGqp5tr-Qk" target="_blank">Video 1</a></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Digestive System</summary>
+          <ul>
+            <li><a href="https://youtu.be/oznT0siuKfQ" target="_blank">Video 1</a></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Vital Signs</summary>
+          <ul>
+            <li><a href="https://youtu.be/E4RELD0eGYE" target="_blank">BP by Palpation</a></li>
+            <li><a href="https://youtu.be/pmD0UbEaqtA" target="_blank">Auscultated BP</a></li>
+          </ul>
+        </details>
+
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    EMT Study Hub
+  </footer>
+
+  <!-- Search Script -->
+  <script>
+    const input = document.getElementById('q');
+    const items = [...document.querySelectorAll('li')].map(li => ({
+      li,
+      text: li.innerText.toLowerCase()
+    }));
+
+    input.addEventListener('input', () => {
+      const q = input.value.toLowerCase().trim();
+      items.forEach(({ li, text }) => {
+        li.style.display = (!q || text.includes(q)) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
